@@ -31,7 +31,7 @@ if option == "Update Winnings":
     st.write(f"Current Winnings for {selected_player}: {selected_player_row['Winnings'].values[0]}")
 
     # Input field to update winnings
-    updated_winnings = st.number_input(f"Update Winnings for {selected_player}", value=0, step=0.1)
+    updated_winnings = st.number_input(f"Update Winnings for {selected_player}", value=0.0, step=0.1)
 
     if st.button("Update"):
         player_index = existing_data[existing_data["Player"] == selected_player].index
